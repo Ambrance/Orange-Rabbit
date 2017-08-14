@@ -9,7 +9,7 @@
   font-family: 'StMarieThin';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/StMarieThin/StMarie-Thin.woff2') format('woff2'), url('../fonts/StMarieThin/StMarie-Thin.woff') format('woff'), url('../fonts/StMarieThin/StMarie-Thin.otf') format('opentype-format');
+  src: url('../fonts/StMarieThin/StMarie-Thin.woff2') format('woff2'), url('../fonts/StMarieThin/StMarie-Thin.woff') format('woff'), url('../fonts/StMarieThin/StMarie-Thin.otf') format('opentype');
 }
 
 html, body {
@@ -269,7 +269,7 @@ img {
   color: #ff9c00;
   -webkit-box-shadow: 0 0 0 3px #fff, 0 3px 1px 2px #ff9c00;
   box-shadow: 0 0 0 3px #fff, 0 3px 1px 2px #ff9c00;
-  font-family: 'StMarieThin', Arial, sans-serif;
+  font-family: 'StMarieThin','Times New Roman', serif;
   font-size: 40px;
   font-weight: normal;
   line-height: 34px;
@@ -282,8 +282,8 @@ img {
 
 .team .member {
   display: inline-block;
-  width: calc(33% - 65px);
-  margin-right: 65px;
+  width: calc(33% - 85px);
+  margin-right: 130px;
   vertical-align: top;
 }
 
@@ -350,7 +350,7 @@ img {
   padding-right: 30px;
   text-align: left;
   color: #fb9c06;
-  font-family: 'StMarieThin', Arial, sans-serif;
+  font-family: 'StMarieThin', 'Times New Roman', serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 23px;
@@ -383,9 +383,8 @@ img {
   color: #ffffff;
   border: none;
   background-color: #fb9c06;
-  font-family: 'StMarieThin', Arial, sans-serif;
+  font-family: 'StMarieThin', 'Times New Roman', serif;
   font-size: 30px;
-  font-weight: bold;
   line-height: 23px;
 }
 
@@ -408,9 +407,8 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'StMarieThin', Arial, sans-serif;
+  font-family: 'StMarieThin', 'Times New Roman', serif;
   font-size: 33px;
-  font-weight: bold;
   line-height: 23px;
 }
 
