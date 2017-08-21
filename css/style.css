@@ -12,7 +12,8 @@
   src: url('../fonts/StMarieThin/StMarie-Thin.woff2') format('woff2'), url('../fonts/StMarieThin/StMarie-Thin.woff') format('woff'), url('../fonts/StMarieThin/StMarie-Thin.otf') format('opentype');
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -28,28 +29,28 @@ body {
   margin: 0 auto;
 }
 
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: '';
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
 
+.page-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .logo {
-  float: left;
-  margin-top: 5px;
   margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .logo .label {
-  float: right;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  margin-left: 50px;
+  margin: auto 0 0 50px;
   text-align: center;
   color: #fb9c06;
   font-family: Calibri, Arial, sans-serif;
@@ -62,22 +63,26 @@ img {
   text-transform: uppercase;
   color: #6e6d6b;
   font-family: 'bebasRegular', Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
+  display: block;
+  margin-top: 4px;
 }
 
 .main-nav {
-  float: right;
-  margin-top: 20px;
+  margin: auto;
+  margin-right: 0;
 }
 
 .main-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-nav li {
-  float: left;
   margin-right: 70px;
 }
 
@@ -112,28 +117,29 @@ img {
   filter: drop-shadow(0 0 1px #fb9c06);
 }
 
-.main-nav a:hover, .main-nav a:active {
+.main-nav a:hover,
+.main-nav a:active {
   color: #fb9c06;
 }
 
 .home a::before {
-  background: url("../img/home-icon.svg") no-repeat 50% 50%;
+  background: url("../img/menu-sprite.svg#home") no-repeat center center;
 }
 
 .about a::before {
-  background: url("../img/about-icon.svg") no-repeat 50% 50%;
+  background: url("../img/menu-sprite.svg#about") no-repeat center center;
 }
 
 .work a::before {
-  background: url("../img/work-icon.svg") no-repeat 50% 50%;
+  background: url("../img/menu-sprite.svg#work") no-repeat center center;
 }
 
 .blog a::before {
-  background: url("../img/blog-icon.svg") no-repeat 50% 50%;
+  background: url("../img/menu-sprite.svg#blog") no-repeat center center;
 }
 
 .contact a::before {
-  background: url("../img/contact-icon.svg") no-repeat 50% 50%;
+  background: url("../img/menu-sprite.svg#contact") no-repeat center center;
 }
 
 .slider {
@@ -185,7 +191,8 @@ img {
   }
 }
 
-.slide .res1, .slide .res2 {
+.slide .res1,
+.slide .res2 {
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -223,15 +230,20 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px 0 30px;
-  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .features-box [class^="feature"] {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 300px;
   padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .features-box p {
@@ -244,7 +256,8 @@ img {
 }
 
 .features-box a {
-  float: right;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   text-decoration: none;
   color: #ffac00;
   font-family: Calibri, Arial, sans-serif;
@@ -258,18 +271,24 @@ img {
 }
 
 .team {
-  text-align: center;
+  text-align: cente;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.team-title, .contacts-title {
+.team-title,
+.contacts-title {
   position: relative;
-  display: inline-block;
-  margin-top: 35px;
-  margin-bottom: 50px;
+  margin: 35px auto 50px;
   color: #ff9c00;
   -webkit-box-shadow: 0 0 0 3px #fff, 0 3px 1px 2px #ff9c00;
   box-shadow: 0 0 0 3px #fff, 0 3px 1px 2px #ff9c00;
-  font-family: 'StMarieThin','Times New Roman', serif;
+  font-family: 'StMarieThin', 'Times New Roman', serif;
   font-size: 40px;
   font-weight: normal;
   line-height: 34px;
@@ -277,14 +296,20 @@ img {
 
 .team .members {
   margin-bottom: 10px;
-  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .team .member {
-  display: inline-block;
   width: calc(33% - 85px);
   margin-right: 130px;
-  vertical-align: top;
 }
 
 .member:last-child {
@@ -312,12 +337,13 @@ img {
 }
 
 .member .photo {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .member .skills {
   margin: 25px 0 0 30px;
-  text-align: left;
   color: #333333;
   font-family: Calibri, Arial, sans-serif;
   font-size: 15px;
@@ -327,39 +353,60 @@ img {
 
 .contacts {
   padding-bottom: 50px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .feedback-table {
-  display: table;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 20px;
 }
 
 .feedback .form-item {
-  display: table-row;
-}
-
-.feedback .form-item * {
-  display: table-cell;
-  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form-item label {
-  width: 50px;
-  padding-right: 30px;
-  text-align: left;
   color: #fb9c06;
   font-family: 'StMarieThin', 'Times New Roman', serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 23px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 9.3%;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
-.form-item input, .form-item textarea {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
+.form-item input,
+.form-item textarea {
   margin-bottom: 35px;
   padding: 8px;
   opacity: 0.92;
@@ -367,6 +414,9 @@ img {
   background-color: #f7f6f5;
   -webkit-box-shadow: inset 5px 2px 0 rgba(198, 197, 197, 0.75);
   box-shadow: inset 5px 2px 0 rgba(198, 197, 197, 0.75);
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .form-item textarea {
@@ -375,9 +425,9 @@ img {
 }
 
 .feedback .submit-btn {
-  float: right;
-  margin-right: 30px;
-  margin-bottom: 20px;
+  margin: 0 30px 20px 0;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   padding: 15px 35px;
   cursor: pointer;
   color: #ffffff;
@@ -401,10 +451,18 @@ img {
 .page-footer {
   padding: 25px;
   background-color: #fb9c06;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-footer p {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-transform: uppercase;
   color: #fff;
   font-family: 'StMarieThin', 'Times New Roman', serif;
